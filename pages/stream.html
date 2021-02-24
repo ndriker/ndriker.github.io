@@ -10,7 +10,7 @@
 </body>
 
 </html>
--->
+
 
 <html>
 <body>
@@ -21,4 +21,35 @@
   <embed height="500" width="650" flashvars="streamer=rtmp://172.30.157.214/live/noahstream;rtmp.subscribe=true&amp;quality=best&amp;controlbar=bottom&amp;rtmp.tunneling=false&amp;frontcolor=#fff&amp;backcolor=#000&amp;stretching=exactfit&amp;autostart=true" wmode="transparent" allowfullscreen="true" allowscriptaccess="always" quality="high" src="http://s.zuuk.net/ply.swf" type="application/x-shockwave-flash"/> 
 </object>
 </body>
+</html>
+-->
+
+<html>
+    <link rel="stylesheet" type="text/css" href="css/boostrap.min.css">
+    <script src="jwplayer/jwplayer.js"></script>
+    <script>jwplayer.key="KEYXXX";</script>
+<head>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+            </div>
+        </div>
+        <div id="myElement">Loading the player...</div>
+        <script type="text/javascript">
+            var playerInstance = jwplayer("myElement");
+            playerInstance.setup({
+                file: "rtmp://10.0.125.160:1935/live/flv:test",
+                height: 360,
+                width: 640
+            });
+        </script>
+        </div>
+
+    </div>
+</body>
+
 </html>
