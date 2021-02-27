@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 
-<!--
 <html>
 
 <body>
@@ -12,85 +11,3 @@
 </html>
 
 
-<html>
-<body>
-<script type='text/javascript' src='swfobject.js'></script>
-<div id='mediaspace'>Playing FLV!</div>
-<object width="400" height="409" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0">
-  <param name="allowscriptaccess" value="always"></param>
-  <embed height="500" width="650" flashvars="streamer=rtmp://172.30.157.214/live/noahstream;rtmp.subscribe=true&amp;quality=best&amp;controlbar=bottom&amp;rtmp.tunneling=false&amp;frontcolor=#fff&amp;backcolor=#000&amp;stretching=exactfit&amp;autostart=true" wmode="transparent" allowfullscreen="true" allowscriptaccess="always" quality="high" src="http://s.zuuk.net/ply.swf" type="application/x-shockwave-flash"/> 
-</object>
-</body>
-</html>
-
-
-<html>
-    <link rel="stylesheet" type="text/css" href="css/boostrap.min.css">
-    <script src="jwplayer/jwplayer.js"></script>
-    <script>jwplayer.key="noahstream";</script>
-<head>
-</head>
-
-<body>
-    <div class="container">
-
-        <div class="row">
-            <div class="col-md-12">
-            </div>
-        </div>
-        <div id="myElement">Loading the player...</div>
-        <script type="text/javascript">
-            var playerInstance = jwplayer("myElement");
-            playerInstance.setup({
-                file: "rtmp://172.30.157.214/live/",
-                height: 360,
-                width: 640
-            });
-        </script>
-        </div>
-
-    </div>
-</body>
-
-</html>
-
-
-
-<html>
-<head>
-<title>RTMP Embed</title>
-<link href="https://vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
-<script src="https://vjs.zencdn.net/4.11/video.js"></script>
-</head>
-<body>
-  <div> Test </div>
-<video id="streamContainer" class="video-js vjs-default-skin" controls preload="auto" width="640"
-height="320" data-setup='{"techorder" : ["flash", "html5"]}'>
-<source src="rtmp://172.30.157.214/live/" type='rtmp/mp4'>
-</video>
-</body>
-</html>
--->
-
-<html>
-<head>
-  <title> Stream Player </title>
-  <link href="video-js.css" rel="stylesheet" type="text/css">
-  <script src="video.js"></script>
-  <script>videojs.options.flash.swf = "video-js.swf";</script>
-</head>
-<body>
-  <div> Test! </div>
- <center>
-   <video 
-     id="livestream" 
-     class="video-js vjs-default-skin vjs-big-play-centered"
-     controls 
-     autoplay
-     preload="auto" 
-     data-setup='{"techorder" : ["flash","html5] }'>
-     <source src="rtmp://172.30.157.214/live/" type="rtmp/flv">
-   </video>
- </center>
-</body>
-</html>
